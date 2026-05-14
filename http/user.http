@@ -1,0 +1,38 @@
+@base_url = http://127.0.0.1:8080/user
+
+###
+POST {{base_url}}/register
+Content-Type: application/json
+
+{
+  "header": {
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwYTQ1M2Q2Ni03ODBkLTRjZDUtODdiMC03Y2E2NGQ1ODI4YWIiLCJuYW1lIjoiYWx4IiwiZXhwIjoxNzc3OTI2Njg0LCJpYXQiOjE3Nzc0OTQ2ODQsImNsYWltcyI6eyJjbGFpbXMiOlsiQWRtaW4iXX19.lAH3fuEeKCE2vrsoDTl1iS_LFafB14PbANj8sKuu0_E"
+  },
+  "username": "alx2",
+  "password": "123"
+}
+
+###
+POST {{base_url}}/login
+Content-Type: application/json
+
+{
+  "header": {
+    "jwt": ""
+  },
+  "username": "alx",
+  "password": "123"
+}
+
+###
+POST {{base_url}}/data
+Content-Type: application/json
+
+{
+  "header": {
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwYTQ1M2Q2Ni03ODBkLTRjZDUtODdiMC03Y2E2NGQ1ODI4YWIiLCJuYW1lIjoiYWx4IiwiZXhwIjoxNzc4NzcyMzU3LCJpYXQiOjE3NzgzNDAzNTcsImNsYWltcyI6eyJjbGFpbXMiOlsiQWRtaW4iXX19.tDOgUpRIVAmvB2PcbP9UnOHtW4hPMINj7cf4DuHDVxc"
+  },
+  "username": "alx",
+  "password": "123"
+}
+

@@ -1,0 +1,20 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-cors = "0.7.1"
+actix-web = "4.13.0"
+async-trait = "0.1.89"
+bcrypt = "0.19.0"
+blake3 = "1.8.5"
+blowfish = "0.10.0"
+chrono = "0.4.44"
+jsonwebtoken = { version = "10.3.0", features = ["rust_crypto"] }
+ormlite = { version="0.24.3", features = ["sqlite"] }
+serde = "1.0.228"
+serde_json = "1.0.149"
+sqlx = "0.8.6"
+tokio = "1.52.1"
+uuid = { version = "1.23.1", features = ["v4"] }
